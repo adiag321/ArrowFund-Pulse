@@ -12,18 +12,29 @@ const TIME_TABS = [
   { id: "month", label: "Past Month", ms: 31 * 24 * 60 * 60 * 1000 },
 ] as const;
 
-const MARKETS = ["Private Equity", "Venture Capital"] as const;
-const MARKET_LABELS: Record<(typeof MARKETS)[number], string> = {
-  "Private Equity": "Private Equity Market",
-  "Venture Capital": "Venture Capital",
-};
-
 type TimeTabId = (typeof TIME_TABS)[number]["id"];
-type Market = (typeof MARKETS)[number];
 
-function articleMarket(article: Article): Market {
+function articleMarket(article: Article): Article["category"] {
   return article.category ?? "Private Equity";
 }
+
+// Funding-round / valuation language — e.g. "raises $40M", "Series B", "valued at $1.2B".
+// This spans both PE and VC coverage, so it's applied across the full dataset rather
+// than being tied to the category classifier used for the other two tabs.
+const FUNDING_SIGNAL_REGEX =
+  /\b(raise[sd]?|raising)\b[^.]{0,40}\$|\$[\d.,]+\s*(million|billion)\b[^.]{0,40}\b(funding|round|raise|financing)|series\s+[a-e]\b|seed\s+(round|funding)|valued\s+at\s+\$|valuation\s+of\s+\$/i;
+
+function isFundingRoundNews(article: Article): boolean {
+  return FUNDING_SIGNAL_REGEX.test(`${article.title} ${article.summary}`);
+}
+
+type MarketTab = { id: string; label: string; matches: (article: Article) => boolean };
+
+const MARKET_TABS: MarketTab[] = [
+  { id: "Private Equity", label: "Private Equity Market", matches: (a) => articleMarket(a) === "Private Equity" },
+  { id: "Venture Capital", label: "Venture Capital", matches: (a) => articleMarket(a) === "Venture Capital" },
+  { id: "Funding Rounds", label: "Funding Rounds", matches: isFundingRoundNews },
+];
 
 function MarketChip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
   return (
@@ -41,7 +52,7 @@ function MarketChip({ active, label, onClick }: { active: boolean; label: string
 }
 
 export function NewsFeed({ articles }: { articles: Article[] }) {
-  const [activeMarket, setActiveMarket] = useState<Market>("Private Equity");
+  const [activeMarket, setActiveMarket] = useState<string>("Private Equity");
   const [activeTab, setActiveTab] = useState<TimeTabId>("24h");
   const [selectedSectors, setSelectedSectors] = useState<Set<string>>(new Set());
   const [firmSearch, setFirmSearch] = useState("");
@@ -64,10 +75,10 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
     });
   };
 
-  const marketArticles = useMemo(
-    () => articles.filter((a) => articleMarket(a) === activeMarket),
-    [articles, activeMarket]
-  );
+  const marketArticles = useMemo(() => {
+    const tab = MARKET_TABS.find((t) => t.id === activeMarket)!;
+    return articles.filter(tab.matches);
+  }, [articles, activeMarket]);
 
   const sectors = useMemo(() => {
     const found = new Set(marketArticles.map((a) => a.sector).filter((s): s is string => Boolean(s)));
@@ -96,13 +107,13 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
   return (
     <div className="flex w-full flex-col">
       <div className="flex gap-2 border-b border-zinc-200 px-6 py-4 sm:px-10 lg:px-16 dark:border-zinc-800">
-        {MARKETS.map((market) => (
+        {MARKET_TABS.map((tab) => (
           <MarketChip
-            key={market}
-            active={activeMarket === market}
-            label={MARKET_LABELS[market]}
+            key={tab.id}
+            active={activeMarket === tab.id}
+            label={tab.label}
             onClick={() => {
-              setActiveMarket(market);
+              setActiveMarket(tab.id);
               resetMarketScopedFilters();
             }}
           />

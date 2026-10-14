@@ -1,5 +1,34 @@
 [
   {
+    "id": "06dadb29ba49000e",
+    "title": "Blackstone (BX) Faces Firmus Buyback Risk As $1.5 Billion AirTrunk IPO Slips",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-bx-faces-firmus-buyback-161736585.html?.tsrc=rss",
+    "summary": "Blackstone (NYSE:BX) is linked to a potential forced share buyback dispute at Firmus Technologies involving confidential arrangements with Nvidia and Blackstone. Firmus Technologies may face obligations to repurchase equity from investors, which could create financial exposure for Blackstone depending on contract terms. Blackstone backed data center operator AirTrunk has reportedly postponed a pla",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-14T16:17:36.000Z",
+    "fetchedAt": "2026-10-14T17:28:46.896Z",
+    "tags": [
+      "IPO"
+    ],
+    "firms": [
+      "Blackstone"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "dc2430829f2944a0",
+    "title": "Germany’s Lufthansa Beats Air France-KLM to Take $1.3 Billion Stake in Portugal’s Flag Carrier",
+    "url": "https://www.wsj.com/business/airlines/germanys-lufthansa-beats-air-france-klm-to-take-1-3-billion-stake-in-portugals-flag-carrier-3fe9ccfb?mod=pls_whats_news_us_business_f",
+    "summary": "Deutsche Lufthansa won a bid to take a 49.9% stake in Portuguese airline TAP, bringing to a close a contest between Lufthansa and Air France-KLM for the acquisition of the stake.",
+    "sourceName": "WSJ US Business",
+    "publishedAt": "2026-10-14T16:10:00.000Z",
+    "fetchedAt": "2026-10-14T17:28:54.867Z",
+    "tags": [
+      "Acquisition"
+    ],
+    "category": "Private Equity"
+  },
+  {
     "id": "c86f14d99cb5be4e",
     "title": "Blackstone (BX) Could Be 39% Undervalued As ZO Skin Health Sale Revives Focus",
     "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-bx-could-39-undervalued-151711384.html?.tsrc=rss",
@@ -115,6 +144,17 @@
       "Permira"
     ],
     "category": "Private Equity"
+  },
+  {
+    "id": "09f4cc554d4ec815",
+    "title": "based NuSynth raises funding to use AI to redesign chemical processes",
+    "url": "https://www.cnbctv18.com/technology/bengaluru-based-nusynth-raises-funding-to-use-ai-to-redesign-chemical-processes-20011425.htm",
+    "summary": "NuSynth Technologies has raised ₹36.5 crore in seed funding from Avaana Capital and Shastra VC to develop AI-led chemical processes and improve manufacturing efficiency, safety and scalability.",
+    "sourceName": "CNBC TV18",
+    "publishedAt": "2026-10-14T04:10:11.000Z",
+    "fetchedAt": "2026-10-14T17:28:47.937Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
   },
   {
     "id": "0cb2cac5fde98dd6",
