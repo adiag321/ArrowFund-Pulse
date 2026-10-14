@@ -28,12 +28,27 @@ function isFundingRoundNews(article: Article): boolean {
   return FUNDING_SIGNAL_REGEX.test(`${article.title} ${article.summary}`);
 }
 
-type MarketTab = { id: string; label: string; matches: (article: Article) => boolean };
+type MarketTab = { id: string; label: string; description: string; matches: (article: Article) => boolean };
 
 const MARKET_TABS: MarketTab[] = [
-  { id: "Private Equity", label: "Private Equity Market", matches: (a) => articleMarket(a) === "Private Equity" },
-  { id: "Venture Capital", label: "Venture Capital", matches: (a) => articleMarket(a) === "Venture Capital" },
-  { id: "Funding Rounds", label: "Funding Rounds", matches: isFundingRoundNews },
+  {
+    id: "Private Equity",
+    label: "Private Equity Market",
+    description: "Buyouts, add-ons, and exits from private equity firms.",
+    matches: (a) => articleMarket(a) === "Private Equity",
+  },
+  {
+    id: "Venture Capital",
+    label: "Venture Capital",
+    description: "Startup funding, venture-backed deals, and VC firm activity.",
+    matches: (a) => articleMarket(a) === "Venture Capital",
+  },
+  {
+    id: "Funding Rounds",
+    label: "Funding Rounds",
+    description: "Companies raising capital, and at what valuation, across PE and VC.",
+    matches: isFundingRoundNews,
+  },
 ];
 
 function MarketChip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
@@ -75,10 +90,11 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
     });
   };
 
+  const activeMarketTab = MARKET_TABS.find((t) => t.id === activeMarket)!;
+
   const marketArticles = useMemo(() => {
-    const tab = MARKET_TABS.find((t) => t.id === activeMarket)!;
-    return articles.filter(tab.matches);
-  }, [articles, activeMarket]);
+    return articles.filter(activeMarketTab.matches);
+  }, [articles, activeMarketTab]);
 
   const sectors = useMemo(() => {
     const found = new Set(marketArticles.map((a) => a.sector).filter((s): s is string => Boolean(s)));
@@ -158,6 +174,7 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
                 className="w-full rounded-full border border-zinc-300 bg-background py-2 pl-10 pr-4 text-sm text-foreground placeholder:text-zinc-400 focus:border-accent focus:outline-none dark:border-zinc-700"
               />
             </div>
+            <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">{activeMarketTab.description}</p>
           </div>
 
           {filtered.length === 0 ? (
