@@ -63,14 +63,22 @@
       "portfolio company"
     ]
   },
-  "tagKeywords": [
-    "Buyout",
-    "Venture",
-    "M&A",
-    "IPO",
-    "Acquisition",
-    "Fundraising"
-  ],
+  "peTags": {
+    "Buyout": "buyout|\\bLBO\\b|leveraged buyout",
+    "Take-Private": "take[- ]private|going private",
+    "Add-On": "add-on acquisition|bolt-on",
+    "Exit": "\\bexit\\b|divests?|sells? its stake|sale of its stake",
+    "Recapitalization": "recapitali[sz]ation|\\brecap\\b"
+  },
+  "vcTags": {
+    "Pre-Seed": "pre-seed",
+    "Seed": "(?<!pre-)(seed (round|funding)|\\bseed\\b)",
+    "Series A": "series a\\b",
+    "Series B": "series b\\b",
+    "Series C": "series c\\b",
+    "Series D+": "series [d-h]\\b",
+    "Down Round": "down round"
+  },
   "firms": [
     "KKR",
     "Blackstone",

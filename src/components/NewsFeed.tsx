@@ -28,6 +28,21 @@ function isFundingRoundNews(article: Article): boolean {
   return FUNDING_SIGNAL_REGEX.test(`${article.title} ${article.summary}`);
 }
 
+// Funding Rounds has no fixed category, so its tags are extracted directly from the
+// text (round stage + dollar amount) rather than drawn from a per-category keyword list.
+const STAGE_REGEX = /pre-seed|seed\s+(?:round|funding)|\bseed\b|series\s+[a-h]\b/i;
+const AMOUNT_REGEX = /\$[\d.,]+\s*(?:million|billion|m\b|b\b)/i;
+
+function extractFundingTags(article: Article): string[] {
+  const text = `${article.title} ${article.summary}`;
+  const tags: string[] = [];
+  const stage = text.match(STAGE_REGEX)?.[0];
+  if (stage) tags.push(stage.replace(/\s+/g, " ").trim().replace(/^\w/, (c) => c.toUpperCase()));
+  const amount = text.match(AMOUNT_REGEX)?.[0];
+  if (amount) tags.push(amount.replace(/\s+/g, " ").trim());
+  return tags;
+}
+
 type MarketTab = { id: string; label: string; description: string; matches: (article: Article) => boolean };
 
 const MARKET_TABS: MarketTab[] = [
@@ -185,13 +200,15 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
             <ul className="divide-y divide-zinc-200 dark:divide-zinc-800">
               {filtered.map((article) => {
                 const isRead = readIds.has(article.id);
+                const displayTags =
+                  activeMarket === "Funding Rounds" ? extractFundingTags(article) : (article.tags ?? []);
                 return (
                   <li key={article.id} className={`px-6 py-5 sm:px-8 ${isRead ? "opacity-50" : ""}`}>
                     <div className="mb-2 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                       <span>{article.sourceName}</span>
                       <span className="text-accent">·</span>
                       <RelativeTime iso={article.publishedAt} />
-                      {article.tags?.map((tag) => (
+                      {displayTags.map((tag) => (
                         <span
                           key={tag}
                           className="rounded-full border border-zinc-300 px-2 py-0.5 text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"

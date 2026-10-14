@@ -20,6 +20,15 @@ const categoryEntries = Object.entries(sourcesConfig.categoryKeywords).map(([cat
   category: category as Article["category"],
   regex: new RegExp((keywords as string[]).join("|"), "i"),
 }));
+// Pre-Seed checked before Seed so "pre-seed" isn't also tagged as "Seed".
+const peTagEntries = Object.entries(sourcesConfig.peTags).map(([label, pattern]) => ({
+  label,
+  regex: new RegExp(pattern, "i"),
+}));
+const vcTagEntries = Object.entries(sourcesConfig.vcTags).map(([label, pattern]) => ({
+  label,
+  regex: new RegExp(pattern, "i"),
+}));
 
 export type FetchFailure = { source: string; message: string; timestamp: string };
 
@@ -31,8 +40,9 @@ function normalizeForDedup(value: string): string {
   return value.trim().toLowerCase().replace(/\s+/g, " ").replace(/[?#].*$/, "");
 }
 
-function tagArticle(text: string): string[] | undefined {
-  const found = sourcesConfig.tagKeywords.filter((tag) => new RegExp(`\\b${tag}\\b`, "i").test(text));
+function tagArticle(text: string, category: Article["category"]): string[] | undefined {
+  const entries = category === "Venture Capital" ? vcTagEntries : peTagEntries;
+  const found = entries.filter(({ regex }) => regex.test(text)).map(({ label }) => label);
   return found.length ? found : undefined;
 }
 
@@ -63,6 +73,7 @@ function toArticle(input: {
 }): Article {
   const safeSummary = input.summary?.trim() ? input.summary.trim().slice(0, 400) : "No summary available.";
   const haystack = `${input.title} ${safeSummary}`;
+  const category = input.category ?? classifyCategory(haystack);
   return {
     id: hashId(input.url),
     title: input.title.trim(),
@@ -71,10 +82,10 @@ function toArticle(input: {
     sourceName: input.sourceName || "Unknown source",
     publishedAt: input.publishedAt ? new Date(input.publishedAt).toISOString() : new Date().toISOString(),
     fetchedAt: new Date().toISOString(),
-    tags: tagArticle(haystack),
+    tags: tagArticle(haystack, category),
     firms: matchFirms(haystack),
     sector: inferSector(haystack),
-    category: input.category ?? classifyCategory(haystack),
+    category,
   };
 }
 
