@@ -17,15 +17,15 @@ export function AppShell({ articles }: { articles: Article[] }) {
 
   return (
     <div className="flex flex-col">
-      <div className="flex gap-2 border-b border-zinc-200 px-6 py-4 sm:px-10 lg:px-16 dark:border-zinc-800">
+      <div className="flex gap-8 border-b border-zinc-200 px-6 py-5 sm:px-10 lg:px-16 dark:border-zinc-800">
         {SECTIONS.map((section) => (
           <button
             key={section.id}
             onClick={() => setActiveSection(section.id)}
-            className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
+            className={`text-sm transition-colors ${
               activeSection === section.id
-                ? "border-foreground bg-foreground text-background"
-                : "border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-foreground dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500"
+                ? "font-semibold text-foreground"
+                : "font-medium text-zinc-500 hover:text-foreground dark:text-zinc-400"
             }`}
           >
             {section.label}
