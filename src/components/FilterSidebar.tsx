@@ -11,21 +11,6 @@ export function Eyebrow({ children }: { children: ReactNode }) {
   );
 }
 
-function Chip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
-        active
-          ? "border-foreground bg-foreground text-background"
-          : "border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-foreground dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500"
-      }`}
-    >
-      {label}
-    </button>
-  );
-}
-
 function RadioRow({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
   return (
     <button
@@ -66,13 +51,9 @@ function CheckboxRow({ checked, label, onClick }: { checked: boolean; label: str
   );
 }
 
-export type MarketOption = { id: string; label: string };
 export type TimeOption = { id: string; label: string };
 
 export function FilterSidebar({
-  markets,
-  activeMarket,
-  onMarketChange,
   timeOptions,
   activeTime,
   onTimeChange,
@@ -86,9 +67,6 @@ export function FilterSidebar({
   activeFirm,
   onFirmChange,
 }: {
-  markets: MarketOption[];
-  activeMarket: string;
-  onMarketChange: (id: string) => void;
   timeOptions: TimeOption[];
   activeTime: string;
   onTimeChange: (id: string) => void;
@@ -107,15 +85,6 @@ export function FilterSidebar({
   return (
     <aside className="w-full shrink-0 border-b border-zinc-200 px-6 py-6 lg:w-72 lg:border-b-0 lg:border-r lg:px-8 dark:border-zinc-800">
       <div className="flex flex-col gap-6 lg:sticky lg:top-[88px]">
-        <div>
-          <Eyebrow>Market</Eyebrow>
-          <div className="flex flex-wrap gap-2">
-            {markets.map((m) => (
-              <Chip key={m.id} active={activeMarket === m.id} label={m.label} onClick={() => onMarketChange(m.id)} />
-            ))}
-          </div>
-        </div>
-
         <div>
           <Eyebrow>Time Period</Eyebrow>
           <div className="flex flex-col gap-0.5">

@@ -25,6 +25,21 @@ function articleMarket(article: Article): Market {
   return article.category ?? "Private Equity";
 }
 
+function MarketChip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
+        active
+          ? "border-foreground bg-foreground text-background"
+          : "border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-foreground dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500"
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
+
 export function NewsFeed({ articles }: { articles: Article[] }) {
   const [activeMarket, setActiveMarket] = useState<Market>("Private Equity");
   const [activeTab, setActiveTab] = useState<TimeTabId>("24h");
@@ -79,97 +94,107 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
   }, [marketArticles, activeTab, selectedSectors, activeFirm, query]);
 
   return (
-    <div className="flex w-full flex-col lg:flex-row">
-      <FilterSidebar
-        markets={MARKETS.map((m) => ({ id: m, label: MARKET_LABELS[m] }))}
-        activeMarket={activeMarket}
-        onMarketChange={(id) => {
-          setActiveMarket(id as Market);
-          resetMarketScopedFilters();
-        }}
-        timeOptions={TIME_TABS.map((t) => ({ id: t.id, label: t.label }))}
-        activeTime={activeTab}
-        onTimeChange={(id) => setActiveTab(id as TimeTabId)}
-        sectors={sectors}
-        selectedSectors={selectedSectors}
-        onToggleSector={toggleSector}
-        onClearSectors={() => setSelectedSectors(new Set())}
-        firms={firms}
-        firmSearch={firmSearch}
-        onFirmSearchChange={setFirmSearch}
-        activeFirm={activeFirm}
-        onFirmChange={setActiveFirm}
-      />
+    <div className="flex w-full flex-col">
+      <div className="flex gap-2 border-b border-zinc-200 px-6 py-4 sm:px-10 lg:px-16 dark:border-zinc-800">
+        {MARKETS.map((market) => (
+          <MarketChip
+            key={market}
+            active={activeMarket === market}
+            label={MARKET_LABELS[market]}
+            onClick={() => {
+              setActiveMarket(market);
+              resetMarketScopedFilters();
+            }}
+          />
+        ))}
+      </div>
 
-      <div className="min-w-0 flex-1">
-        <div className="sticky top-[72px] z-10 border-b border-zinc-200 bg-background/90 px-6 py-4 backdrop-blur sm:px-8 dark:border-zinc-800">
-          <div className="relative">
-            <svg
-              className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400"
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              aria-hidden
-            >
-              <circle cx="9" cy="9" r="6" />
-              <path d="M14 14L18 18" strokeLinecap="round" />
-            </svg>
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search headlines and summaries…"
-              className="w-full rounded-full border border-zinc-300 bg-background py-2 pl-10 pr-4 text-sm text-foreground placeholder:text-zinc-400 focus:border-accent focus:outline-none dark:border-zinc-700"
-            />
+      <div className="flex w-full flex-col lg:flex-row">
+        <FilterSidebar
+          timeOptions={TIME_TABS.map((t) => ({ id: t.id, label: t.label }))}
+          activeTime={activeTab}
+          onTimeChange={(id) => setActiveTab(id as TimeTabId)}
+          sectors={sectors}
+          selectedSectors={selectedSectors}
+          onToggleSector={toggleSector}
+          onClearSectors={() => setSelectedSectors(new Set())}
+          firms={firms}
+          firmSearch={firmSearch}
+          onFirmSearchChange={setFirmSearch}
+          activeFirm={activeFirm}
+          onFirmChange={setActiveFirm}
+        />
+
+        <div className="min-w-0 flex-1">
+          <div className="sticky top-[72px] z-10 border-b border-zinc-200 bg-background/90 px-6 py-4 backdrop-blur sm:px-8 dark:border-zinc-800">
+            <div className="relative">
+              <svg
+                className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                aria-hidden
+              >
+                <circle cx="9" cy="9" r="6" />
+                <path d="M14 14L18 18" strokeLinecap="round" />
+              </svg>
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search headlines and summaries…"
+                className="w-full rounded-full border border-zinc-300 bg-background py-2 pl-10 pr-4 text-sm text-foreground placeholder:text-zinc-400 focus:border-accent focus:outline-none dark:border-zinc-700"
+              />
+            </div>
           </div>
-        </div>
 
-        {filtered.length === 0 ? (
-          <p className="px-6 py-16 text-center text-sm text-zinc-500 sm:px-8 dark:text-zinc-400">
-            No news published in this timeframe.
-          </p>
-        ) : (
-          <ul className="divide-y divide-zinc-200 dark:divide-zinc-800">
-            {filtered.map((article) => {
-              const isRead = readIds.has(article.id);
-              return (
-                <li key={article.id} className={`px-6 py-5 sm:px-8 ${isRead ? "opacity-50" : ""}`}>
-                  <div className="mb-2 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                    <span>{article.sourceName}</span>
-                    <span className="text-accent">·</span>
-                    <RelativeTime iso={article.publishedAt} />
-                    {article.tags?.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full border border-zinc-300 px-2 py-0.5 text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                    {article.firms?.map((firm) => (
-                      <span key={firm} className="rounded-full border border-accent/40 px-2 py-0.5 text-accent">
-                        {firm}
-                      </span>
-                    ))}
-                  </div>
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => markAsRead(article.id)}
-                    className="block font-heading text-lg font-semibold leading-snug text-foreground hover:text-accent"
-                  >
-                    {article.title}
-                  </a>
-                  <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                    {article.summary}
-                  </p>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+          {filtered.length === 0 ? (
+            <p className="px-6 py-16 text-center text-sm text-zinc-500 sm:px-8 dark:text-zinc-400">
+              No news published in this timeframe.
+            </p>
+          ) : (
+            <ul className="divide-y divide-zinc-200 dark:divide-zinc-800">
+              {filtered.map((article) => {
+                const isRead = readIds.has(article.id);
+                return (
+                  <li key={article.id} className={`px-6 py-5 sm:px-8 ${isRead ? "opacity-50" : ""}`}>
+                    <div className="mb-2 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                      <span>{article.sourceName}</span>
+                      <span className="text-accent">·</span>
+                      <RelativeTime iso={article.publishedAt} />
+                      {article.tags?.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-zinc-300 px-2 py-0.5 text-zinc-600 dark:border-zinc-700 dark:text-zinc-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                      {article.firms?.map((firm) => (
+                        <span key={firm} className="rounded-full border border-accent/40 px-2 py-0.5 text-accent">
+                          {firm}
+                        </span>
+                      ))}
+                    </div>
+                    <a
+                      href={article.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => markAsRead(article.id)}
+                      className="block font-heading text-lg font-semibold leading-snug text-foreground hover:text-accent"
+                    >
+                      {article.title}
+                    </a>
+                    <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                      {article.summary}
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );
