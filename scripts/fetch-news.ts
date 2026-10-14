@@ -41,14 +41,17 @@ async function main() {
   console.log("[fetch-news] Starting fetch run:", new Date().toISOString());
 
   const existing = loadExisting();
-  const { articles, stats, failures } = await runFetch(existing, process.env.GNEWS_API_KEY);
+  const { articles, stats, failures } = await runFetch(existing, {
+    gnews: process.env.GNEWS_API_KEY,
+    nyt: process.env.NYT_API_KEY,
+  });
 
   fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
   fs.writeFileSync(DATA_PATH, JSON.stringify(articles, null, 2));
   appendLog(failures);
 
   console.log(
-    `[fetch-news] Fetched ${stats.gnewsCount} from GNews, ${stats.rssCount} from RSS. Wrote ${stats.total} articles (${stats.newCount} new, ${stats.prunedCount} pruned).`
+    `[fetch-news] Fetched ${stats.gnewsCount} from GNews, ${stats.nytCount} from NYT, ${stats.rssCount} from RSS. Wrote ${stats.total} articles (${stats.newCount} new, ${stats.prunedCount} pruned).`
   );
   if (failures.length) {
     console.warn(`[fetch-news] ${failures.length} failure(s) logged to data/fetch-log.json`);

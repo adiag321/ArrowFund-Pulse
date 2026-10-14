@@ -1,5 +1,881 @@
 [
   {
+    "id": "c86f14d99cb5be4e",
+    "title": "Blackstone (BX) Could Be 39% Undervalued As ZO Skin Health Sale Revives Focus",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-bx-could-39-undervalued-151711384.html?.tsrc=rss",
+    "summary": "Blackstone (BX) is back in the M&A conversation after reports that its portfolio company ZO Skin Health will be sold to Galderma for about US$1.5b in cash. This is putting fresh attention on realizations and capital recycling. Recent deal talk comes at a challenging time for Blackstone, with the share price down 14.4% over the past month and 30.7% year to date. However, the 3-year total shareholde",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-14T15:17:11.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "tags": [
+      "M&A"
+    ],
+    "firms": [
+      "Blackstone"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "194c78a3e2d99f6d",
+    "title": "Ares takes minority stake in Statera’s 1.9GW flexible energy assets",
+    "url": "https://www.power-technology.com/news/ares-minority-stake-stateras-1-9gw-assets/?.tsrc=rss",
+    "summary": "The deal is Ares Infrastructure Equity's debut European investment, covering storage and flexible generation capacity across the UK.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-14T14:29:25.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "sector": "Infrastructure",
+    "category": "Private Equity"
+  },
+  {
+    "id": "8d0ceb22eb1f2d83",
+    "title": "Audax Private Equity’s AKAM adds New York property manager Matthew Adam Properties",
+    "url": "https://www.pehub.com/audax-private-equitys-akam-adds-new-york-property-manager-matthew-adam-properties/",
+    "summary": "Founded more than 30 years ago, Matthew Adam Properties manages 85 residential, commercial and office buildings across New York City.\nThe post Audax Private Equity’s AKAM adds New York property manager Matthew Adam Properties appeared first on PE Hub.",
+    "sourceName": "PE Hub",
+    "publishedAt": "2026-10-14T13:35:51.000Z",
+    "fetchedAt": "2026-10-14T15:44:41.989Z",
+    "sector": "Real Estate",
+    "category": "Private Equity"
+  },
+  {
+    "id": "21277d8da3462c3a",
+    "title": "Fairfax Financial Buying Majority Stake in India’s IDBI Bank",
+    "url": "https://www.wsj.com/finance/fairfax-financial-buying-majority-stake-in-indias-idbi-bank-faf0fe0c?mod=rss_markets_main",
+    "summary": "Canada’s Fairfax Financial is positioning itself in India’s fast-growing financial services industry with the acquisition of a majority stake in IDBI Bank for about $5.43 billion.",
+    "sourceName": "WSJ Markets",
+    "publishedAt": "2026-10-14T13:30:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.364Z",
+    "tags": [
+      "Acquisition"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "115b5f851e3cf893",
+    "title": "BLK Q3 Earnings Beat, Stock Gains Pre-Market on Revenue & AUM Growth",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/blk-q3-earnings-beat-stock-125200947.html?.tsrc=rss",
+    "summary": "BlackRock's Q3 earnings surged 38%, beating estimates as record AUM of $15.49 trillion and strong inflows fueled revenue growth and a pre-market stock rally.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-14T12:52:00.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "b84cd41cf34051d2",
+    "title": "3 US Financial Stocks Built for Higher for Longer Rates",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/3-us-financial-stocks-built-111036825.html?.tsrc=rss",
+    "summary": "Inflation is proving sticky, rate cuts look distant, and the gap between winners and losers on the stock market is widening. Higher borrowing costs squeeze some sectors, yet they can reshape earnings power for selected financial stocks that live off interest spreads, fee income, or underwriting. This article breaks down three US financial stocks exposed to the latest CPI and Federal Reserve signal",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-14T11:10:36.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "a06087ebbc6207d9",
+    "title": "Princeton Equity Group promotes Nagle and Trahan to partner",
+    "url": "https://www.privateequitywire.co.uk/princeton-equity-group-promotes-nagle-and-trahan-to-partner/",
+    "summary": "Princeton Equity Group, a US private equity firm specialising in franchisor and multi-location businesses, has promoted Jack Nagle and Joseph Trahan from principal to partner, according to a company announcement.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-14T09:44:31.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "ace578242ad04d31",
+    "title": "Smaller private equity firms face pressure as borrowing costs rise",
+    "url": "https://www.privateequitywire.co.uk/smaller-private-equity-firms-face-pressure-as-borrowing-costs-rise/",
+    "summary": "Smaller private equity managers are facing mounting financial and operational pressures as higher borrowing costs, weaker portfolio performance and a prolonged slowdown in exits reduce prospects for investment returns and employee payouts, according to a report by The Wall Street Journal.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-14T09:35:22.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "341c32b4dca14bff",
+    "title": "Blackstone records $6bn in European private equity exits",
+    "url": "https://www.privateequitywire.co.uk/blackstone-records-6bn-in-european-private-equity-exits/",
+    "summary": "Blackstone has generated approximately $6bn in proceeds from European private equity exits so far in 2026, more than double its previous annual record set in 2014, according to a report by Bloomberg.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-14T09:28:14.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "firms": [
+      "Blackstone"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "84929e66f350e976",
+    "title": "LSEG in talks to acquire Permira-backed Octus for $3.5bn",
+    "url": "https://www.privateequitywire.co.uk/lseg-in-talks-to-acquire-permira-backed-octus-for-3-5bn/",
+    "summary": "TOP STORY: The London Stock Exchange Group (LSEG) is in discussions to acquire financial data provider Octus from private equity firm Permira in a deal valued at approximately $3.5bn, according to a report by Reuters.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-14T09:27:11.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "firms": [
+      "Permira"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "0cb2cac5fde98dd6",
+    "title": "French $2.2b buyout a ‘black mark’ for Orora board",
+    "url": "https://www.afr.com/companies/infrastructure/french-2-2b-buyout-a-black-mark-for-orora-board-20261014-p615go",
+    "summary": "The can and bottle maker avoided a second strike at its annual meeting, but $2.5 billion in market value has vanished since it purchased Saverglass.",
+    "sourceName": "Australian Financial Review",
+    "publishedAt": "2026-10-14T02:19:30.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.725Z",
+    "tags": [
+      "Buyout"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "dbb967575e21f6ec",
+    "title": "CMOC Group to Invest 900 Million Yuan in Two Funds",
+    "url": "https://www.marketscreener.com/news/cmoc-group-to-invest-900-million-yuan-in-two-funds-ce785dd2d88cff20",
+    "summary": "CMOC Group plans to invest 900 million yuan in two private equity funds through its subsidiary Tibet Shimoke Trading, according to a Shanghai bourse filing on Wednesday.\nThe subsidiary will invest...",
+    "sourceName": "MarketScreener",
+    "publishedAt": "2026-10-14T00:41:18.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.726Z",
+    "sector": "Tech",
+    "category": "Private Equity"
+  },
+  {
+    "id": "7fa05e36651e0947",
+    "title": "Blackstone has $100-billion plans for India in 5 years, says COO Jonathan Gray",
+    "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/blackstone-has-100-billion-plans-for-india-in-5-years-says-coo-jonathan-gray/articleshow/134925980.cms",
+    "summary": "Blackstone, the largest alternative asset manager, intends to raise its investment in India significantly. The company currently invests $50 billion and aims for $100 billion in five years. Chief Operating Officer Jonathan Gray highlighted opportunities in various sectors, including private equity and infrastructure. He noted the attractiveness of the Indian capital markets for foreign investors.",
+    "sourceName": "The Economic Times",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.726Z",
+    "firms": [
+      "Blackstone"
+    ],
+    "sector": "Infrastructure",
+    "category": "Private Equity"
+  },
+  {
+    "id": "0701c4c71ed55bd7",
+    "title": "PrivateTechShares Releases Educational Resources to Help Startup Employees Understand Equity Compensation",
+    "url": "https://www.manilatimes.net/2026/10/14/tmt-newswire/globenewswire/privatetechshares-releases-educational-resources-to-help-startup-employees-understand-equity-compensation/2445133",
+    "summary": "Funding rounds make headlines, but employees often have unanswered questions about their own equity. Understanding dilution, valuations and potential exit scenarios can help them prepare for important conversations with their company.",
+    "sourceName": "The Manila Times",
+    "publishedAt": "2026-10-13T22:07:34.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "c99db880f1ea5e7f",
+    "title": "Southern California fire departments say lifesaving fire equipment costs and build times are skyrocketing. They blame private equity firms",
+    "url": "https://www.cbsnews.com/losangeles/news/southern-california-fire-departments-equipment-costs-private-equities/",
+    "summary": "Some departments are engaged in a class action lawsuit against apparatus manufacturers.",
+    "sourceName": "CBS News",
+    "publishedAt": "2026-10-13T21:27:47.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "e42c3b0447c79e36",
+    "title": "SpaceX Wants $40 Billion in New Debt, and It'll Need Hundreds of Billions More to Achieve Musk's Vision",
+    "url": "https://www.fool.com/investing/2026/10/13/spacex-wants-40-billion-in-new-debt-and-itll-need/?.tsrc=rss",
+    "summary": "SpaceX wants to scale AI quickly, and its other businesses aren't capital-light either.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T20:20:00.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "sector": "Tech",
+    "category": "Private Equity"
+  },
+  {
+    "id": "cd96e5741e6f63da",
+    "title": "Bank Earnings Look Strong, But Markets Shrug",
+    "url": "https://www.wsj.com/finance/stocks/bank-earnings-look-strong-but-markets-shrug-26533199?mod=rss_markets_main",
+    "summary": "Plus, memory stocks fall, and private equity is facing a reckoning.",
+    "sourceName": "WSJ Markets",
+    "publishedAt": "2026-10-13T20:15:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.364Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "2e5d6c48bcb646a6",
+    "title": "What Really Separates Successful CEOs From the Rest - A Private Equity Founder's Unfiltered Take",
+    "url": "https://www.entrepreneur.com/building-a-business/entrepreneurship/what-really-separates-successful-ceos-from-the-rest-a-private-equity-founders-unfiltered-take",
+    "summary": "Tide Rock CEO Ryan Peddycord shares the principles that shaped his career and the no-debt private equity strategy most firms keep to themselves.",
+    "sourceName": "Entrepreneur",
+    "publishedAt": "2026-10-13T20:00:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "b1790bb3a3368e14",
+    "title": "Mogul Grabs $15.5M Series A Round",
+    "url": "https://vcnewsdaily.com/mogul/venture-capital-funding/hwnfvksnxy",
+    "summary": "WASHINGTON, DC, Mogul, the AI-powered real estate investing platform, today announced it closed a $15.5 million Series A round led by Draper Associates, 55% above its original $10 million target.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-13T19:58:43.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.706Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "43e129286c9cb8e8",
+    "title": "KKR (KKR) Adds Solar Capacity Following JV Expansion While Fair Value Stays In Focus",
+    "url": "https://finance.yahoo.com/energy/articles/kkr-kkr-adds-solar-capacity-191114283.html?.tsrc=rss",
+    "summary": "TotalEnergies and KKR (KKR) have agreed to fold an extra 700 MW of U.S. solar capacity into their existing 50/50 joint venture, a move investors may watch closely. For KKR, this solar JV move lands at a tricky moment for the ticker, with the share price at US$91.51 after a 1-day share price gain of 0.6% but a 30-day share price decline of 9.5% and a year-to-date share price drop of 29%. Over a lon",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T19:11:14.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "tags": [
+      "Venture"
+    ],
+    "firms": [
+      "KKR"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "e072aa1d7d40244c",
+    "title": "Aegis Logistics acquires majority stake in Dubai's Tristar for $809 mn",
+    "url": "https://www.moneycontrol.com/news/business/markets/aegis-logistics-to-acquire-majority-stake-in-dubai-s-tristar-for-809-mn-14051419.html",
+    "summary": "The transaction is arguably India Inc's biggest ever buyout of an asset in the Middle East corridor , sources told Moneycontrol.",
+    "sourceName": "Moneycontrol",
+    "publishedAt": "2026-10-13T18:52:01.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "tags": [
+      "Buyout"
+    ],
+    "sector": "Tech",
+    "category": "Private Equity"
+  },
+  {
+    "id": "0be329581bd9d6d9",
+    "title": "Starbucks denies Chipotle takeover rumours as turnaround continues",
+    "url": "https://torontosun.com/business/money-news/starbucks-denies-chipotle-takeover-rumours-as-turnaround-continues",
+    "summary": "A Starbucks-Chipotle merger could have generated about $50 billion in annual sales, but the coffee giant has shut down buyout talk. Read on.",
+    "sourceName": "Toronto Sun",
+    "publishedAt": "2026-10-13T18:23:45.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "tags": [
+      "Buyout"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "0c5dd43de14d24b6",
+    "title": "KKR (KKR) Adds $1.2 Billion Solar Portfolio to Its U.S. Renewables Venture",
+    "url": "https://finance.yahoo.com/energy/articles/kkr-kkr-adds-1-2-181608318.html?.tsrc=rss",
+    "summary": "KKR (NYSE:KKR) and TotalEnergies agreed to expand their U.S. renewables joint venture with a US$1.2b solar portfolio on 12 October 2026. The new deal adds 700 MW of utility-scale solar capacity, bringing the partnership's total U.S. renewable portfolio to about 2.1 GW. The expanded assets are structured within the existing KKR and TotalEnergies platform that focuses on utility-scale renewable powe",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T18:16:08.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "tags": [
+      "Venture"
+    ],
+    "firms": [
+      "KKR"
+    ],
+    "sector": "Infrastructure",
+    "category": "Private Equity"
+  },
+  {
+    "id": "f90f86c11409f0bf",
+    "title": "Inc. Names Acclaimed Business Journalist Bethany McLean as Chief Financial Correspondent",
+    "url": "https://www.manilatimes.net/2026/10/14/tmt-newswire/globenewswire/inc-names-acclaimed-business-journalist-bethany-mclean-as-chief-financial-correspondent/2445017",
+    "summary": "McLean will expand Inc.’s coverage of private equity and venture capital, private and public markets, and the financial forces shaping entrepreneurship today",
+    "sourceName": "The Manila Times",
+    "publishedAt": "2026-10-13T18:04:44.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "tags": [
+      "Venture"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "c9754aa1c87ffb5f",
+    "title": "Applied Intuition receives investment offers at $30 billion valuation, doubling its $15 billion valuation",
+    "url": "https://techstartups.com/2026/10/13/applied-intuition-receives-investment-offers-at-30-billion-valuation-doubling-its-15-billion-valuation/",
+    "summary": "Applied Intuition, the Silicon Valley startup developing software for self-driving vehicles, has received investment offers valuing the company at at least $30 billion, potentially doubling its valuation in just 16 months. The offers could lead to a new funding round of $1 billion or more in the coming months, according to a report from The",
+    "sourceName": "TechStartups.com",
+    "publishedAt": "2026-10-13T17:40:28.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "b8da5ba8713a4f1b",
+    "title": "Higher Rates Are Coming for Private Equity—and Smaller Firms Are Already Hurting",
+    "url": "https://www.wsj.com/finance/investing/higher-rates-are-coming-for-private-equityand-smaller-firms-are-already-hurting-754ada6c?mod=rss_markets_main",
+    "summary": "Firms are facing employee turnover as hopes for payouts dim amid sluggish exits.",
+    "sourceName": "WSJ Markets",
+    "publishedAt": "2026-10-13T17:30:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.365Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "38e33105d261c09c",
+    "title": "KKR (KKR) Stock May Be Overvalued Following Its 55% Three Year Run",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/kkr-kkr-stock-may-overvalued-170949891.html?.tsrc=rss",
+    "summary": "KKR & Co. has given long term holders a strong ride over the past few years, yet the recent pullback leaves a clear question for you as an investor. Is today’s price for KKR stock still in line with the returns the firm earns on the capital it puts to work across private markets, infrastructure and credit? Over the past 3 years KKR has delivered a total return of 54.7%. This puts real pressure on ",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T17:09:49.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "firms": [
+      "KKR"
+    ],
+    "sector": "Infrastructure",
+    "category": "Private Equity"
+  },
+  {
+    "id": "8a7627f73e2bfbad",
+    "title": "Reach Security Tops $50 Million in Series B Funding Round",
+    "url": "https://www.marketscreener.com/news/reach-security-tops-50-million-in-series-b-funding-round-ce785dddd08ff422",
+    "summary": "By Stephen Nakrosis\nReach Security said it has raised over $50 million in a Series B funding round that was led by Top Tier Capital Partners.\nOther participants in the round included...",
+    "sourceName": "MarketScreener",
+    "publishedAt": "2026-10-13T16:54:25.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "e7fda0afe002671e",
+    "title": "LSEG in talks to buy Permira-owned Octus data group for about $3.5 billion",
+    "url": "https://www.marketscreener.com/news/lseg-in-talks-to-buy-permira-owned-octus-data-group-for-about-3-5-billion-ce785dddd18bf121",
+    "summary": "The London Stock Exchange Group confirmed on Tuesday it is in talks with private equity firm Permira to acquire financial data group Octus for about $3.5 billion.\nNo final agreement has...",
+    "sourceName": "MarketScreener",
+    "publishedAt": "2026-10-13T16:03:57.000Z",
+    "fetchedAt": "2026-10-14T15:44:40.727Z",
+    "firms": [
+      "Permira"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "6c9e96949b19e993",
+    "title": "Bumble Soars 56% as Ithaca Holdings Agrees to Take It Private at $6.05 a Share; Match Group Advances 2%",
+    "url": "https://247wallst.com/investing/2026/10/13/bumble-soars-56-as-ithaca-holdings-agrees-to-take-it-private-at-6-05-a-share-match-group-advances-2/?.tsrc=rss",
+    "summary": "A surprise all-cash buyout just sent a struggling dating app surging in morning trading, while its biggest rival is moving in a completely different direction for a very different reason.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T15:07:45.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "tags": [
+      "Buyout"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "bba579e21f3084e3",
+    "title": "VC Firm Antares Ventures Raises Over $50 Million for Deep-Tech Investments",
+    "url": "https://www.wsj.com/pro/venture-capital/vc-firm-antares-ventures-raises-over-50-million-for-deep-tech-investments-76ba087a?mod=pls_whats_news_us_business_f",
+    "summary": "Singapore-based firm aims to eventually top off the fund’s capital pool at $100 million.",
+    "sourceName": "WSJ US Business",
+    "publishedAt": "2026-10-13T14:44:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.501Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "27d9db03e91ad63b",
+    "title": "Brellium raises $23M to catch medical billing errors with AI and protect healthcare providers from costly audits",
+    "url": "https://techstartups.com/2026/10/13/brellium-raises-23m-to-catch-medical-billing-errors-with-ai-and-protect-healthcare-providers-from-costly-audits/",
+    "summary": "New York-based healthcare AI startup Brellium has raised $23 million in venture funding to help healthcare providers catch medical billing errors, identify gaps in patient care, and avoid costly insurance audits before problems become financial losses. The company announced the funding alongside the launch of CortexLM, an AI system that reviews patient records for documentation errors and",
+    "sourceName": "TechStartups.com",
+    "publishedAt": "2026-10-13T14:41:30.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "tags": [
+      "Venture"
+    ],
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "5d8283d54d30d64b",
+    "title": "Meet Armaan Dhanda, who left college at 22 to turn microbes into tiny factories, his biotech startup raised $2.6 million",
+    "url": "https://economictimes.indiatimes.com/world/business/meet-armaan-dhanda-who-left-college-at-22-to-turn-microbes-into-tiny-factories-his-biotech-startup-raised-2-6-million/articleshow/134919771.cms",
+    "summary": "Dhanda co-founded the company with Samyak Baid, and they met at the National University of Singapore (NUS). The main approach of the business is to change how ingredients are manufactured. Notably, the company raised $2.6 million in pre-seed funding in 2025 to develop its technology, which uses engineered microbes to produce ingredients from simple sugars.",
+    "sourceName": "The Economic Times",
+    "publishedAt": "2026-10-13T14:01:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "46473f807d47bcee",
+    "title": "Better Telecom Stock: AT&T vs. Verizon Communications",
+    "url": "https://www.fool.com/coverage/better-buy/2026/10/13/better-telecom-stock-at-and-t-vs-verizon-communications/?.tsrc=rss",
+    "summary": "AT&T boasts a 17.4% net margin after shedding media assets, while Verizon's aggressive acquisitions have lifted free cash flow higher, but at the cost of greater leverage.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T13:40:53.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "c38bdef4c9a95365",
+    "title": "Startup Funding News Today, October 13, 2026: Astribot, CarbonFarm, Clueso, Ubitium, Epyr & More",
+    "url": "https://techstartups.com/2026/10/13/startup-funding-news-today-october-13-2026-astribot-carbonfarm-ubitium-epyr-more/",
+    "summary": "Today's startup funding report shows investors pouring money into the technology needed to bring AI into the real world, including humanoid robots, computer chips, advanced cooling systems, energy storage, and nuclear fusion. Chinese robotics startup Astribot led today's verified funding activity with RMB 1 billion in fresh financing at an RMB 15 billion valuation, while two",
+    "sourceName": "TechStartups.com",
+    "publishedAt": "2026-10-13T13:22:20.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "8db828c555ae2d72",
+    "title": "Updated: Decision of Lithuanian Competition Authority regarding Vilnius Akropolis Cinema",
+    "url": "https://finance.yahoo.com/media-advertising/articles/updated-decision-lithuanian-competition-authority-131700040.html?.tsrc=rss",
+    "summary": "On October 6, 2026, Lithuanian Competition Authority rejected the application of the company's parent company MM Grupp OÜ (hereinafter MMG) to resolve the issue of acquiring the cinema located in the Vilnius Akropolis center by granting a concentration permit. MMG believes that the Authority's decision is not in line with established practice in European cinema transaction market, including in Lit",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T13:17:00.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "30bd5a13abaf2b93",
+    "title": "From crypto to fintech, consumer and AI: Ashish Singhal explains CoinSwitch Ventures’ BlackLane Capital pivot",
+    "url": "https://economictimes.indiatimes.com/markets/expert-view/from-crypto-to-fintech-consumer-and-ai-ashish-singhal-explains-coinswitch-ventures-blacklane-capital-pivot/articleshow/134917578.cms",
+    "summary": "CoinSwitch Ventures is rebranding as BlackLane Capital, an independent global early-stage investment firm. It plans to invest up to $5 million per startup across fintech, AI, enterprise infrastructure, consumer applications and digital assets. Co-founder Ashish Singhal discusses the broader investment strategy and its ambition to enable over $100 million in startup funding.",
+    "sourceName": "The Economic Times",
+    "publishedAt": "2026-10-13T12:05:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "eccccd4d198de599",
+    "title": "Lightsprint Secures Funding to Enhance AI Coding for Non",
+    "url": "https://www.businessinsider.com/lightsprint-secures-funding-ai-coding-for-non-techies-2026-10",
+    "summary": "Lightsprint, a San Francisco startup, raises $6.1M to help non-engineers like designers and product managers edit code using AI tools.",
+    "sourceName": "Business Insider",
+    "publishedAt": "2026-10-13T12:00:01.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "26042bb1dfa06be3",
+    "title": "Maharashtra Signs MoU To Launch Women’s Startup Hub",
+    "url": "https://www.outlookindia.com/national/maharashtra-signs-mou-to-set-up-start-up-hub-to-support-women-entrepreneurs",
+    "summary": "Maharashtra signs an MoU with Udyati Foundation to establish a Women Entrepreneurship Startup Hub, offering funding, mentorship, and incubation for female founders",
+    "sourceName": "Outlook India",
+    "publishedAt": "2026-10-13T11:43:14.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "ff6053e777604cb4",
+    "title": "Info Edge board approves Rs 200 cr investment in two wholly-owned subsidiaries",
+    "url": "https://economictimes.indiatimes.com/tech/funding/info-edge-board-approves-rs-200-cr-investment-in-two-wholly-owned-subsidiaries/articleshow/134915464.cms",
+    "summary": "Info Edge has announced an investment of approximately Rs 200 crore in its subsidiaries Startup Internet Services and Startup Investments. The plan includes an initial cash transaction for acquiring equity shares in both companies. Approximately Rs 100 crore is allocated to each subsidiary to facilitate their investment opportunities. Info Edge will infuse additional funds in separate tranches bas",
+    "sourceName": "The Economic Times",
+    "publishedAt": "2026-10-13T10:42:43.000Z",
+    "fetchedAt": "2026-10-14T15:44:42.303Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "a2203bfd3ecf3ed9",
+    "title": "Alternative Views with Coller EQT’s Bosa Adeghe",
+    "url": "https://www.privateequitywire.co.uk/alternative-views-with-coller-eqts-bosa-adeghe/",
+    "summary": "In Alternative Views, Private Equity Wire® goes behind closed doors with those in the know to get the latest on private markets. In this episode we discuss the secondary market with Bosa Adeghe, a partner in the investment team at Coller EQT.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-13T09:32:22.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "firms": [
+      "EQT"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "a7b4698557717df6",
+    "title": "Aurelius to acquire Nokia’s enterprise campus edge business",
+    "url": "https://www.privateequitywire.co.uk/aurelius-to-acquire-nokias-enterprise-campus-edge-business/",
+    "summary": "Private equity firm Aurelius has agreed to acquire Nokia’s Enterprise Campus Edge (ECE) business, which provides private wireless networks and industrial connectivity solutions, according to a statement from Nokia. Financial terms of the transaction were not disclosed.",
+    "sourceName": "Private Equity Wire",
+    "publishedAt": "2026-10-13T09:15:59.000Z",
+    "fetchedAt": "2026-10-14T15:44:43.455Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "ae95260e933f13df",
+    "title": "Market Chatter: Blackstone-Backed AirTrunk Data Center Operator Hits Pause on $1.5 Billion IPO",
+    "url": "https://finance.yahoo.com/real-estate/articles/market-chatter-blackstone-backed-airtrunk-083705956.html?.tsrc=rss",
+    "summary": "Blackstone-backed (BX) AirTrunk has delayed a planned $1.5 billion IPO of a real estate investment t",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T08:37:05.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "tags": [
+      "IPO"
+    ],
+    "firms": [
+      "Blackstone"
+    ],
+    "sector": "Real Estate",
+    "category": "Private Equity"
+  },
+  {
+    "id": "ad1b989fe1ac741a",
+    "title": "Blackstone's Gray on 'Tough Choices' Ahead",
+    "url": "https://finance.yahoo.com/video/blackstones-gray-tough-choices-ahead-042825193.html?.tsrc=rss",
+    "summary": "Blackstone President and COO Jonathan Gray says fiscal challenges in Western economies will mean governments will have to make \"tough choices\".",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-13T04:28:25.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "firms": [
+      "Blackstone"
+    ],
+    "category": "Private Equity"
+  },
+  {
+    "id": "69763a9cd9cdb428",
+    "title": "KKR (KKR) Agrees to $5.1 Billion Gen II Deal. Can It Deliver Attractive Returns?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/kkr-kkr-agrees-5-1-211544583.html?.tsrc=rss",
+    "summary": "On October 5, KKR & Co. Inc. (NYSE:KKR) announced an agreement to acquire Gen II Fund Services in a $5.1 billion deal, including debt. The company will buy the private capital fund administrator from Hg, General Atlantic and other minority investors. This will help the company gain exposure to infrastructure supporting private ​markets. KKR is […]",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T21:15:44.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "firms": [
+      "KKR",
+      "General Atlantic"
+    ],
+    "sector": "Infrastructure",
+    "category": "Private Equity"
+  },
+  {
+    "id": "305356d808f2c0d4",
+    "title": "SpaceX turns to debt again to fund a historic order",
+    "url": "https://www.thestreet.com/investing/stocks/spacex-apollo-financing-fund-major-nvidia-chip-order?.tsrc=rss",
+    "summary": "Musk’s space exploration company wants billions to finance what will be the largest order ever recorded in chip history.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T20:23:00.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "fcbcf1640748f99c",
+    "title": "Vitalize Pulls In $31M Series A Financing",
+    "url": "https://vcnewsdaily.com/vitalize/venture-capital-funding/fybkqycskn",
+    "summary": "SAN FRANCISCO, CA, Vitalize, the AI-native platform that helps health systems manage labor and capacity in real time, has announced a $31 million Series A round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-12T19:58:25.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.706Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "4c89a266b92394e4",
+    "title": "Navra Grabs Oversubscribed $19M Series A",
+    "url": "https://vcnewsdaily.com/navra/venture-capital-funding/vnptygkspc",
+    "summary": "LAS VEGAS, NV, Navra, a financial technology company led by Figure and SoFi co-founder Mike Cagney, has announced it has closed an oversubscribed $19 million Series A funding round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-12T19:39:53.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.706Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "6fbf5d4ed54f4a4c",
+    "title": "QUICK SPARK: DLA Piper Makes Its Private Credit Move With Three Senior Latham Hires",
+    "url": "https://www.benzinga.com/markets/private-markets/26/10/62310459/dla-piper-makes-its-private-credit-move-with-three-senior-latham-hires?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+    "summary": "Global law firm DLA Piper has tapped three senior lawyers from Latham & Watkins in an effort to strengthen its private credit and capital solutions practice. Seung-Ju Paik and Preeta Paragash both served as counsel at Latham and have now...",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T19:37:29.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "64c7fa7f1e50f26b",
+    "title": "Broadcom’s Financing Web Spans Both Biggest AI Labs. The Deal Isn’t Done.",
+    "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-financing-spans-both-biggest-164702461.html?.tsrc=rss",
+    "summary": "Broadcom is no longer just selling chips to the AI industry’s biggest labs. It is financing them. The chipmaker, which already lent Anthropic $42 billion through a convertible note facility disclosed in Anthropic’s S-1, is now in talks to arrange financing for OpenAI’s custom processors. Two independent reports disagree on the size by $20 billion, […]",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T16:47:02.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "sector": "Tech",
+    "category": "Private Equity"
+  },
+  {
+    "id": "11699b77a4a8987c",
+    "title": "1800 Avenue of the Stars Lands $550M Century City Refinancing",
+    "url": "https://www.credaily.com/briefs/1800-avenue-of-the-stars-lands-550m-century-city-refinancing/?.tsrc=rss",
+    "summary": "A $550M CMBS loan on Century City’s 1800 Avenue of the Stars shows lenders favor leased, renovated office towers.",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T15:34:43.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "2a59426551cf9a8f",
+    "title": "Blue Owl Capital Stock And 2 Private Credit Plays Funding The AI Buildout",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/blue-owl-capital-stock-2-151226907.html?.tsrc=rss",
+    "summary": "AI infrastructure is racing ahead, but the real bottleneck increasingly sits in capital, not chips. That shift pulls specialty lenders and private-credit players into the spotlight, as they help fund the heavy spending behind this boom. Miss the financing angle, and you miss a big piece of the AI story. This article walks through three stocks from our global private-credit screener that appear esp",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T15:12:26.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "sector": "Tech",
+    "category": "Private Equity"
+  },
+  {
+    "id": "ab59af1f8f987e05",
+    "title": "Vinson & Elkins Hires Aditi Sharma as NY-Based Finance Counsel",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/vinson-elkins-hires-aditi-sharma-145144245.html?.tsrc=rss",
+    "summary": "By Karen Roman Vinson & Elkins said Aditi Sharma is the firm’s latest Finance counsel at its New York office, having previously served at Latham & Watkins, where she was a member of the Banking & Private Credit practice. Ms. Sharma’s experience focuses on advising banks, other financial institutions and borrowers, and private credit funds on […] The post Vinson & Elkins Hires Aditi Sharma as NY-Ba",
+    "sourceName": "Yahoo Finance",
+    "publishedAt": "2026-10-12T14:51:44.000Z",
+    "fetchedAt": "2026-10-14T15:47:30.937Z",
+    "category": "Private Equity"
+  },
+  {
+    "id": "4d7b607819a83700",
+    "title": "Type One Energy Closes $200M Series B",
+    "url": "https://vcnewsdaily.com/type-one-energy/venture-capital-funding/rmbflssvlf",
+    "summary": "KNOXVILLE, TN, Type One Energy has announced the successful completion of a $200 million Series B financing round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T20:19:34.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.706Z",
+    "sector": "Infrastructure",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "d54d083b9fbd2cf6",
+    "title": "Siena Secures $17M Series A Financing",
+    "url": "https://vcnewsdaily.com/siena/venture-capital-funding/mxkcwphwjs",
+    "summary": "NEW YORK, NY, Siena has announced the close of a $17 million Series A funding round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:58:44.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "ab68ac3ae58e247c",
+    "title": "Oratomic Inks $475 Million Series B",
+    "url": "https://vcnewsdaily.com/oratomic/venture-capital-funding/vrtfcbyhpd",
+    "summary": "PASADENA, CA, Oratomic, whose mission is to build the first fault-tolerant quantum computers, announced that it has raised a $475M Series B round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:48:55.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "958a06c48ffa2e68",
+    "title": "pubX Pulls In $5M Series A Round",
+    "url": "https://vcnewsdaily.com/pubx/venture-capital-funding/hlfjcdxhqm",
+    "summary": "NEW YORK, NY, pubX, which builds agent-to-agent infrastructure for advertising, has announced a $5 million Series A round.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:30:41.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Infrastructure",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "593f4349cdad887c",
+    "title": "Sabi Pulls In $50 Million Seed Round",
+    "url": "https://vcnewsdaily.com/sabi/venture-capital-funding/fjghjjgwcq",
+    "summary": "SAN FRANCISCO, CA, Sabi announced it has raised a $50 million seed round, led by Khosla Ventures, to develop a brain-AI interface designed for everyday wear.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:18:48.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "8946bf8f18701b44",
+    "title": "Wally Grabs $25M Series A Round",
+    "url": "https://vcnewsdaily.com/wally/venture-capital-funding/zgmdnsrkxp",
+    "summary": "NEW YORK, NY, Wally, a nationwide oral care platform, has announced $25 million in Series A funding.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:14:27.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "3b09789e4bb6bf29",
+    "title": "Peppermint Scores $4.7M in Seed Funding",
+    "url": "https://vcnewsdaily.com/peppermint/venture-capital-funding/pkjbfhkmkq",
+    "summary": "SAN FRANCISCO, CA, Peppermint, an AI-powered platform that streamlines financial operations, announced $4.7 million in seed funding led by Moxxie.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:12:50.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "ab5b5e0bf6177d32",
+    "title": "Rein Security Closes $25 Million Series A",
+    "url": "https://vcnewsdaily.com/rein/venture-capital-funding/jytccpznmg",
+    "summary": "NEW YORK, NY, Rein Security, the AI-native runtime security platform for enterprises, announced that the company has raised $25 million in Series A financing.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T19:04:21.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "bc5471acedad9cfc",
+    "title": "Gallatin AI Announces $50 Million Series A",
+    "url": "https://vcnewsdaily.com/gallatin-ai/venture-capital-funding/bypknkjpzn",
+    "summary": "EL SEGUNDO, CA, Gallatin AI, an AI-native logistics company transforming sustainment decision-making for the U.S. military, announced $50 million in Series A financing.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:52:36.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "51a335b1b047d415",
+    "title": "Vocca Attains $20M Series A",
+    "url": "https://vcnewsdaily.com/vocca/venture-capital-funding/fcqrjffxty",
+    "summary": "NEW YORK, NY, Vocca announced a $20M Series A led by Norrsken VC.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:49:15.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "65be2885466ce0a3",
+    "title": "Fortastra Lands $30 Million Series A",
+    "url": "https://vcnewsdaily.com/fortastra/venture-capital-funding/mncxwmgjln",
+    "summary": "LOS ANGELES, CA, Fortastra, a developer of maneuverable, resilient spacecraft for on-orbit security and national defense, announced the close of its $30 million Series A.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:45:44.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "daab9c57899157b1",
+    "title": "Rebel Audio Raises Series A at $50 Million",
+    "url": "https://vcnewsdaily.com/rebel-audio/venture-capital-funding/tblqddddwc",
+    "summary": "NASHVILLE, TN, Rebel Audio, the AI-powered podcasting platform designed to radically simplify how podcasts are created, produced, and scaled, announced the closing of its Series A funding round, led by creator media company and studio HardScope.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:43:32.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "b9ae3ff2a44380f7",
+    "title": "Oxide Nets $445M Series D",
+    "url": "https://vcnewsdaily.com/oxide-computer-company/venture-capital-funding/gyhhlywbwh",
+    "summary": "EMERYVILLE, CA, Oxide Computer Company announced it has raised a $445 million Series D led by Eclipse",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:30:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "7689b800e62d54a9",
+    "title": "Kapta Space Banks $24M Series A",
+    "url": "https://vcnewsdaily.com/kapta-space/venture-capital-funding/lrjkwfxjgg",
+    "summary": "SEATTLE, WA, Kapta Space, a developer of next-generation spaceborne radar payloads, announced a $24 million Series A financing led by Washington Harbour Partners and co-led by Bison Ventures",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-09T18:25:58.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "5328557a3d8e8dcb",
+    "title": "Quantum Startup Oratomic Now Worth $5.4 Billion After Series-B Funding",
+    "url": "https://www.wsj.com/cio-journal/quantum-startup-oratomic-now-worth-5-4-billion-after-series-b-funding-538a80fc?mod=pls_whats_news_us_business_f",
+    "summary": "Quantum computing startup Oratomic raised $475 million, just three months after its Series A, the latest sign of growing investor enthusiasm in the nascent technology.",
+    "sourceName": "WSJ US Business",
+    "publishedAt": "2026-10-08T11:00:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.501Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "0c52746dbfec680f",
+    "title": "Parallel Systems Closes $100M+ in New Funding",
+    "url": "https://vcnewsdaily.com/parallel-systems/venture-capital-funding/kftwjkwbtj",
+    "summary": "LOS ANGELES, CA, Parallel Systems, the world's leading battery-electric autonomous freight rail company, has closed its Series C funding.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T19:05:06.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Infrastructure",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "edc1d997bcebe999",
+    "title": "Matchpoint Therapeutics Nets $150M in Series B",
+    "url": "https://vcnewsdaily.com/matchpoint-therapeutics/venture-capital-funding/pnqmqgclpw",
+    "summary": "WATERTOWN, MA, Matchpoint Therapeutics announced the successful closing of a $150 million Series B financing co-led by Nextech Invest and Norwest.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T19:02:53.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "2ff04a8fbcf84d64",
+    "title": "Multiply Labs Lands $75 Million Series B",
+    "url": "https://vcnewsdaily.com/multiply-labs/venture-capital-funding/khdclmwdmm",
+    "summary": "SAN FRANCISCO, CA, Multiply Labs, the physical AI company automating some of the most complex manufacturing processes in medicine, announced a $75 million Series B.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T18:54:40.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "efbd162069fce04f",
+    "title": "TeddyHoldings.AI Gains $60 Million in Seed Funding",
+    "url": "https://vcnewsdaily.com/teddyholdings.ai/venture-capital-funding/phhstcgqqy",
+    "summary": "NEW YORK, NY, TeddyHoldings.AI a compliance and client-focused legal services platform incubation, announced it has raised $60 million in Seed funding.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T18:45:27.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "0a5b077f4bf91ddb",
+    "title": "Stuut Raises $52.5M in Series B",
+    "url": "https://vcnewsdaily.com/stuut/venture-capital-funding/cqtmptytxx",
+    "summary": "NEW YORK, NY, Stuut is announcing a $52.5 million Series B led by Insight Partners, with participation from Andreessen Horowitz, M12, Microsoft's Venture Fund, and Activant.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T18:34:34.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "tags": [
+      "Venture"
+    ],
+    "firms": [
+      "Andreessen Horowitz"
+    ],
+    "category": "Venture Capital"
+  },
+  {
+    "id": "820f11d10c24266e",
+    "title": "Guardrail Technologies Banks $3 Million in Seed Funding",
+    "url": "https://vcnewsdaily.com/guardrail-technologies/venture-capital-funding/hywhwmsxmq",
+    "summary": "PARK CITY, UT, Guardrail Technologies, the independent AI security and control company, announced it has closed two seed rounds to date totaling nearly $3 million, led by Filter Fund Venture Capital.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-07T18:32:27.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "tags": [
+      "Venture"
+    ],
+    "sector": "Tech",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "f14e25f9c8fcd27b",
+    "title": "General Medicine Scores $120M Series B",
+    "url": "https://vcnewsdaily.com/general-medicine/venture-capital-funding/hznmtflqxs",
+    "summary": "SAN FRANCISCO, CA, General Medicine, a nationwide healthcare store, today announced $120 million in Series B financing.",
+    "sourceName": "VC News Daily",
+    "publishedAt": "2026-10-06T20:07:55.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.707Z",
+    "sector": "Healthcare",
+    "category": "Venture Capital"
+  },
+  {
+    "id": "c7774fc937829798",
+    "title": "Uber to Expand Uber Eats Service with $2.3 Billion Acquisition of Catering Platform",
+    "url": "https://www.wsj.com/business/uber-to-acquire-business-catering-platform-ezcater-for-2-3-billion-9d501195?mod=pls_whats_news_us_business_f",
+    "summary": "The deal gives Uber Eats access to ezCater’s network of more than 140,000 restaurants in the U.S., which generate over $2.5 billion in annual gross bookings.",
+    "sourceName": "WSJ US Business",
+    "publishedAt": "2026-10-06T13:37:00.000Z",
+    "fetchedAt": "2026-10-14T15:44:44.501Z",
+    "tags": [
+      "Acquisition"
+    ],
+    "category": "Private Equity"
+  },
+  {
     "id": "d18eb2cdf1e4a421",
     "title": "Women hold 13% of senior investment roles in European private markets, Level 20 finds",
     "url": "https://www.privateequitywire.co.uk/women-hold-13-of-senior-investment-roles-in-european-private-markets-level-20-finds/",

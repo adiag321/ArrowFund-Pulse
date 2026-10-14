@@ -140,6 +140,67 @@ async function fetchFromGNews(apiKey: string | undefined, failures: FetchFailure
   return results;
 }
 
+type NYTDoc = {
+  headline?: { main?: string };
+  web_url: string;
+  abstract?: string;
+  snippet?: string;
+  pub_date?: string;
+  source?: string;
+};
+
+async function fetchNYTQuery(
+  queryConfig: { category: string; query: string },
+  apiKey: string,
+  failures: FetchFailure[]
+): Promise<Article[]> {
+  const url = new URL("https://api.nytimes.com/svc/search/v2/articlesearch.json");
+  url.searchParams.set("q", queryConfig.query);
+  url.searchParams.set("sort", "newest");
+  url.searchParams.set("api-key", apiKey);
+
+  try {
+    const res = await fetch(url.toString());
+    if (!res.ok) {
+      throw new Error(`NYT API responded ${res.status}: ${await res.text()}`);
+    }
+    const data = await res.json();
+    const docs = (data.response?.docs as NYTDoc[]) || [];
+    return docs.map((d) =>
+      toArticle({
+        title: d.headline?.main || "",
+        url: d.web_url,
+        summary: d.abstract || d.snippet,
+        sourceName: d.source || "The New York Times",
+        publishedAt: d.pub_date,
+        category: queryConfig.category as Article["category"],
+      })
+    );
+  } catch (err) {
+    failures.push({
+      source: `nyt:${queryConfig.category}`,
+      message: (err as Error).message,
+      timestamp: new Date().toISOString(),
+    });
+    return [];
+  }
+}
+
+async function fetchFromNYT(apiKey: string | undefined, failures: FetchFailure[]): Promise<Article[]> {
+  if (!apiKey) {
+    failures.push({ source: "nyt", message: "NYT_API_KEY not set — skipped", timestamp: new Date().toISOString() });
+    return [];
+  }
+
+  // NYT's free tier allows 5 requests/minute — space queries well under that.
+  const results: Article[] = [];
+  for (const [index, queryConfig] of sourcesConfig.nyt.entries()) {
+    if (index > 0) await sleep(13000);
+    results.push(...(await fetchNYTQuery(queryConfig, apiKey, failures)));
+  }
+  return results;
+}
+
 async function fetchFromRss(failures: FetchFailure[]): Promise<Article[]> {
   const results: Article[] = [];
   for (const feed of sourcesConfig.rssFeeds) {
@@ -147,7 +208,7 @@ async function fetchFromRss(failures: FetchFailure[]): Promise<Article[]> {
       const parsed = await rssParser.parseURL(feed.url);
       for (const item of parsed.items || []) {
         const haystack = `${item.title || ""} ${item.contentSnippet || item.content || ""}`;
-        if (!keywordRegex.test(haystack)) continue;
+        if (!feed.skipKeywordFilter && !keywordRegex.test(haystack)) continue;
         if (!item.link || !item.title) continue;
         results.push(
           toArticle({
@@ -188,13 +249,17 @@ function pruneOld(articles: Article[]): Article[] {
   return articles.filter((a) => new Date(a.publishedAt).getTime() >= cutoff);
 }
 
-export async function runFetch(existing: Article[], gnewsApiKey: string | undefined) {
+export async function runFetch(
+  existing: Article[],
+  apiKeys: { gnews: string | undefined; nyt: string | undefined }
+) {
   const failures: FetchFailure[] = [];
-  const [gnewsArticles, rssArticles] = await Promise.all([
-    fetchFromGNews(gnewsApiKey, failures),
+  const [gnewsArticles, nytArticles, rssArticles] = await Promise.all([
+    fetchFromGNews(apiKeys.gnews, failures),
+    fetchFromNYT(apiKeys.nyt, failures),
     fetchFromRss(failures),
   ]);
-  const incoming = [...gnewsArticles, ...rssArticles];
+  const incoming = [...gnewsArticles, ...nytArticles, ...rssArticles];
 
   const merged = dedupe(existing, incoming);
   const newCount = merged.length - existing.length;
@@ -206,6 +271,7 @@ export async function runFetch(existing: Article[], gnewsApiKey: string | undefi
     articles: pruned,
     stats: {
       gnewsCount: gnewsArticles.length,
+      nytCount: nytArticles.length,
       rssCount: rssArticles.length,
       newCount,
       prunedCount,

@@ -14,10 +14,19 @@
     }
   ],
   "rssFeeds": [
-    { "name": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex" },
+    { "name": "Yahoo Finance", "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=KKR,BX,APO,CG,ARES,OWL,TPG&region=US&lang=en-US", "skipKeywordFilter": true },
     { "name": "PE Hub", "url": "https://www.pehub.com/feed/" },
     { "name": "Private Equity Wire", "url": "https://www.privateequitywire.co.uk/feed/" },
-    { "name": "TechCrunch Venture", "url": "https://techcrunch.com/category/venture/feed/" }
+    { "name": "TechCrunch Venture", "url": "https://techcrunch.com/category/venture/feed/" },
+    { "name": "CNBC Finance", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664" },
+    { "name": "CNBC Business", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001147" },
+    { "name": "WSJ Markets", "url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain" },
+    { "name": "WSJ US Business", "url": "https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness" },
+    { "name": "VC News Daily", "url": "http://feeds.feedburner.com/vcnewsdaily" }
+  ],
+  "nyt": [
+    { "category": "Private Equity", "query": "\"private equity\" OR buyout OR LBO" },
+    { "category": "Venture Capital", "query": "\"venture capital\" OR \"startup funding\" OR \"Series A\" OR \"Series B\"" }
   ],
   "keywordFilters": [
     "private equity",

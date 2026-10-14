@@ -5,6 +5,10 @@ import type { Article } from "@/types/article";
 
 const BLOB_PATHNAME = "news-data.json";
 
+// NYT's rate limit means this run now takes ~15s+ (GNews + NYT throttling + 9 RSS
+// feeds), which exceeds Vercel's default 10s function timeout — extend it.
+export const maxDuration = 60;
+
 async function loadExisting(): Promise<Article[]> {
   try {
     const meta = await head(BLOB_PATHNAME);
@@ -23,7 +27,10 @@ export async function GET(request: NextRequest) {
   }
 
   const existing = await loadExisting();
-  const { articles, stats, failures } = await runFetch(existing, process.env.GNEWS_API_KEY);
+  const { articles, stats, failures } = await runFetch(existing, {
+    gnews: process.env.GNEWS_API_KEY,
+    nyt: process.env.NYT_API_KEY,
+  });
 
   await put(BLOB_PATHNAME, JSON.stringify(articles, null, 2), {
     access: "public",
