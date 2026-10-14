@@ -1,5 +1,5 @@
 import { getArticles } from "@/lib/articles";
-import { NewsFeed } from "@/components/NewsFeed";
+import { AppShell } from "@/components/AppShell";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const dynamic = "force-dynamic";
@@ -32,7 +32,7 @@ export default async function Home() {
         </div>
       </header>
       <main className="bg-background">
-        <NewsFeed articles={articles} />
+        <AppShell articles={articles} />
       </main>
     </div>
   );
