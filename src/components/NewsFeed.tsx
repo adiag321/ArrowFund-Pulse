@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Article } from "@/types/article";
 import { RelativeTime } from "./RelativeTime";
+import { FullDateTime } from "./FullDateTime";
 import { useReadArticles } from "@/lib/useReadArticles";
 import { useTabLastSeen } from "@/lib/useTabLastSeen";
 import { FilterSidebar } from "./FilterSidebar";
@@ -242,9 +243,20 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
                 return (
                   <li key={article.id} className={`px-6 py-5 sm:px-8 ${isRead ? "opacity-50" : ""}`}>
                     <div className="mb-2 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                      {!isRead && (
+                        <span className="rounded-full bg-accent px-2 py-0.5 font-bold text-white">New</span>
+                      )}
                       <span>{article.sourceName}</span>
                       <span className="text-accent">·</span>
                       <RelativeTime iso={article.publishedAt} />
+                      <span className="normal-case text-zinc-400 dark:text-zinc-500">
+                        (<FullDateTime iso={article.publishedAt} />)
+                      </span>
+                      {article.sector && (
+                        <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                          {article.sector}
+                        </span>
+                      )}
                       {displayTags.map((tag) => (
                         <span
                           key={tag}
