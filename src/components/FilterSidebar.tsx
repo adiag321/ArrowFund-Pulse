@@ -11,7 +11,7 @@ export function Eyebrow({ children }: { children: ReactNode }) {
   );
 }
 
-function RadioRow({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
+export function RadioRow({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
@@ -29,7 +29,7 @@ function RadioRow({ active, label, onClick }: { active: boolean; label: string; 
   );
 }
 
-function CheckboxRow({ checked, label, onClick }: { checked: boolean; label: string; onClick: () => void }) {
+export function CheckboxRow({ checked, label, onClick }: { checked: boolean; label: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}

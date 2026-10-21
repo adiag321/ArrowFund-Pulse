@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { Article } from "@/types/article";
 import { NewsFeed } from "./NewsFeed";
-import { MarketSignalPlaceholder } from "./MarketSignalPlaceholder";
+import { MarketSignalFeed } from "./MarketSignalFeed";
 import { ThemeToggle } from "./ThemeToggle";
 
 const SECTIONS = [
@@ -58,7 +58,7 @@ export function AppShell({ articles }: { articles: Article[] }) {
         </div>
       </header>
       <main className="bg-background">
-        {activeSection === "news" ? <NewsFeed articles={articles} /> : <MarketSignalPlaceholder />}
+        {activeSection === "news" ? <NewsFeed articles={articles} /> : <MarketSignalFeed articles={articles} />}
       </main>
     </div>
   );
