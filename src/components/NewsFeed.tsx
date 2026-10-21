@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Article } from "@/types/article";
 import { RelativeTime } from "./RelativeTime";
 import { useReadArticles } from "@/lib/useReadArticles";
+import { useTabLastSeen } from "@/lib/useTabLastSeen";
 import { FilterSidebar } from "./FilterSidebar";
 
 const TIME_TABS = [
@@ -66,17 +67,32 @@ const MARKET_TABS: MarketTab[] = [
   },
 ];
 
-function MarketChip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
+function MarketChip({
+  active,
+  label,
+  newCount,
+  onClick,
+}: {
+  active: boolean;
+  label: string;
+  newCount: number;
+  onClick: () => void;
+}) {
   return (
     <button
       onClick={onClick}
-      className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
+      className={`relative rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
         active
           ? "border-foreground bg-foreground text-background"
           : "border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-foreground dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500"
       }`}
     >
       {label}
+      {newCount > 0 && (
+        <span className="absolute -right-1.5 -top-1.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold leading-none text-white">
+          {newCount > 99 ? "99+" : newCount}
+        </span>
+      )}
     </button>
   );
 }
@@ -89,6 +105,25 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
   const [activeFirm, setActiveFirm] = useState<string>("");
   const [query, setQuery] = useState("");
   const { readIds, markAsRead } = useReadArticles();
+  const { lastSeen, markSeen } = useTabLastSeen(MARKET_TABS.map((t) => t.id));
+
+  const newCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    MARKET_TABS.forEach((tab) => {
+      const seenAt = lastSeen[tab.id];
+      counts[tab.id] = seenAt
+        ? articles.filter((a) => tab.matches(a) && new Date(a.fetchedAt).getTime() > new Date(seenAt).getTime())
+            .length
+        : 0;
+    });
+    return counts;
+  }, [articles, lastSeen]);
+
+  useEffect(() => {
+    // The default/active tab is already visible on load, so its badge shouldn't linger.
+    markSeen(activeMarket);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const resetMarketScopedFilters = () => {
     setSelectedSectors(new Set());
@@ -143,9 +178,11 @@ export function NewsFeed({ articles }: { articles: Article[] }) {
             key={tab.id}
             active={activeMarket === tab.id}
             label={tab.label}
+            newCount={newCounts[tab.id] ?? 0}
             onClick={() => {
               setActiveMarket(tab.id);
               resetMarketScopedFilters();
+              markSeen(tab.id);
             }}
           />
         ))}
